@@ -1,0 +1,177 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio — Economía Creativa | Poblaciones Ancestrales de Bolívar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Servicios y proyectos de economía creativa basados en saberes y culturas ancestrales de Bolívar." />
+  <style>
+    /* Pequeñas customizaciones */
+    .hero-bg{ background: linear-gradient(120deg,#0f172a 0%, #0ea5a6 100%); }
+    .card-hover:hover{ transform: translateY(-6px); box-shadow: 0 20px 30px rgba(2,6,23,0.4); }
+    /* Modal lightbox */
+    .lightbox{ background: rgba(2,6,23,0.8); backdrop-filter: blur(4px); }
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-slate-50">
+  <header class="hero-bg text-white">
+    <div class="max-w-6xl mx-auto p-6 md:p-12">
+      <nav class="flex items-center justify-between">
+        <h1 class="text-xl md:text-2xl font-semibold">Economía Creativa — Bolívar</h1>
+        <ul class="hidden md:flex gap-6 text-sm">
+          <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+          <li><a href="#portfolio" class="hover:underline">Portafolio</a></li>
+          <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+          <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section class="mt-12 grid gap-8 md:grid-cols-2 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">Servicios de economía creativa<br class="hidden sm:inline"/> Inspirados en saberes ancestrales de Bolívar</h2>
+          <p class="mt-4 text-slate-100 max-w-prose">Diseño de productos culturales, procesos de co-creación con comunidades, gestión de patrimonio inmaterial y cadenas de valor sostenibles que respetan y valorizan el conocimiento local.</p>
+
+          <div class="mt-6 flex gap-4">
+            <a href="#contacto" class="inline-block bg-white text-teal-700 font-medium px-4 py-2 rounded shadow">Contáctanos</a>
+            <a href="#portfolio" class="inline-block border border-white/40 text-white px-4 py-2 rounded">Ver portafolio</a>
+          </div>
+        </div>
+
+        <div class="hidden md:block">
+         
+          <img src="https://www.las2orillas.co/wp-content/uploads/2025/02/pueblos-de-bolivar.jpg" alt="Grupo ancestral de Bolívar - foto de ejemplo" class="w-full h-64 object-cover rounded shadow-lg" />
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6 md:p-12">
+    <section id="servicios" class="mt-8">
+      <h3 class="text-2xl font-semibold">Servicios</h3>
+      <p class="mt-2 text-sm text-slate-600">Propuestas pensadas para la conservación cultural, la generación de ingresos locales y la innovación social.</p>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="bg-white p-6 rounded-lg card-hover transition-transform">
+          <h4 class="font-semibold">Co-creación de Productos</h4>
+          <p class="mt-2 text-sm text-slate-600">Desarrollo de artesanías, textiles, alimentos tradicionales y experiencias culturales co-diseñadas con las comunidades.</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg card-hover transition-transform">
+          <h4 class="font-semibold">Formación y Talleres</h4>
+          <p class="mt-2 text-sm text-slate-600">Capacitaciones en gestión cultural, marketing ético y formación en emprendimiento creativo.</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg card-hover transition-transform">
+          <h4 class="font-semibold">Gestión de Proyectos</h4>
+          <p class="mt-2 text-sm text-slate-600">Planeación de proyectos con enfoque participativo, búsqueda de financiación y monitoreo de impacto.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="mt-12">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-semibold">Portafolio visual</h3>
+        <p class="text-sm text-slate-500"> </p>
+      </div>
+
+      <div class="mt-6 grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+        
+        <figure class="relative group overflow-hidden rounded bg-white shadow">
+          <img src="https://artesaniasdecolombia.com.co/Documentos/Contenido/29410_tejeduria-san-jacinto-especial-1-artesanias-colombia-2018-g.jpg" alt="Textiles tradicionales de la población X en Bolívar" class="w-full h-44 object-cover cursor-pointer" onclick="openLightbox('images/ancestral1.jpg','Textiles tradicionales — Población X')" />
+          <figcaption class="p-3 text-sm">Textiles tradicionales de la Población de San Jacinto,para hacer hamacas</figcaption>
+        </figure>
+
+        <figure class="relative group overflow-hidden rounded bg-white shadow">
+          <img src="https://hotelalmirantecartagena.com/wp-content/uploads/2023/06/hac-rutas-por-bolivar-san-juan-nepomuceno-1024x768.jpg" alt="Ritual comunitario De San Juan Nepomuceno " class="w-full h-44 object-cover cursor-pointer" onclick="openLightbox('images/ancestral2.jpg','Cerámica ancestral — Taller colaborativo')" />
+          <figcaption class="p-3 text-sm">Ritual comunitario Del Municipio San Juan Nepomuceno</figcaption>
+        </figure>
+
+        <figure class="relative group overflow-hidden rounded bg-white shadow">
+          <img src="https://www.museonacional.gov.co/Inicio/SiteAssets/inbox/files/images/Vasija_abril.jpg" alt="Cerámica ancestral De san San Jacinto datados alrededor del 3.750 a.C.  " class="w-full h-44 object-cover cursor-pointer" onclick="openLightbox('images/ancestral3.jpg','Ritual comunitario — Uso con consentimiento')" />
+          <figcaption class="p-3 text-sm">Cerámica ancestral De San Jacinto datados alrededor del 3.750 a.C.</figcaption>
+        </figure>
+
+        <figure class="relative group overflow-hidden rounded bg-white shadow">
+          <img src="https://static.wixstatic.com/media/80ff0e_2a59adbca9d246bb9ee0506ef0355b6f~mv2.png/v1/fill/w_646,h_225,al_c,q_85,enc_avif,quality_auto/80ff0e_2a59adbca9d246bb9ee0506ef0355b6f~mv2.png" alt="Paisaje cultural y territorio ancestral" class="w-full h-44 object-cover cursor-pointer" onclick="openLightbox('images/ancestral4.jpg','Paisaje cultural — Territorio ancestral')" />
+          <figcaption class="p-3 text-sm">Vistas desde el Municipio de Turbaco Conocido como "El Balcón Turístico"</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section id="sobre" class="mt-12 bg-white p-6 rounded-lg shadow">
+      <h3 class="text-2xl font-semibold">Sobre el proyecto</h3>
+      <p class="mt-3 text-slate-600">El proyecto consiste en la creación e implementación de un portafolio de servicios orientado a visibilizar, fortalecer y comercializar de manera justa y sostenible los productos culturales, artísticos y turísticos de las poblaciones ancestrales del departamento de Bolívar. </p>
+
+      <ul class="mt-4 grid gap-2 sm:grid-cols-2">
+        <li class="text-sm">• Enfoque participativo y de respeto.</li>
+        <li class="text-sm">• Compromiso con comercio justo y reciprocidad.</li>
+        <li class="text-sm">• Protección del patrimonio inmaterial.</li>
+        <li class="text-sm">• Fortalecer capacidades en gestión cultural, marketing ético y emprendimiento creativo.</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="mt-12">
+      <h3 class="text-2xl font-semibold">Contacto</h3>
+      <p class="mt-2 text-sm text-slate-600">Escríbenos para co-crear, solicitar talleres o proponer proyectos.</p>
+
+      <form class="mt-4 grid gap-4 sm:grid-cols-2" onsubmit="handleForm(event)">
+        <input required name="nombre" placeholder="Nombre" class="p-3 rounded border" />
+        <input required name="email" type="email" placeholder="Correo electrónico" class="p-3 rounded border" />
+        <input name="organizacion" placeholder="Organización (opcional)" class="p-3 rounded border" />
+        <textarea required name="mensaje" placeholder="Mensaje" class="p-3 rounded border col-span-2" rows="4"></textarea>
+        <div class="col-span-2 flex gap-4">
+          <button type="submit" class="bg-teal-600 text-white px-4 py-2 rounded">Enviar</button>
+          <a href="mailto:tu-email@example.com" class="px-4 py-2 border rounded self-center">Enviar por correo</a>
+        </div>
+      </form>
+
+      <p class="mt-3 text-xs text-slate-500"></p>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-600">© <span id="year"></span> Economía Creativa — Bolívar. </p>
+      <div class="text-sm text-slate-500">Semillero Humanidades — Robinson Casseres B.</div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="hidden fixed inset-0 z-50 items-center justify-center lightbox">
+    <div class="max-w-4xl mx-auto p-4">
+      <button onclick="closeLightbox()" class="text-white text-xl mb-4">✕ Cerrar</button>
+      <img id="lightbox-img" src="" alt="" class="w-full rounded shadow-lg" />
+      <p id="lightbox-caption" class="text-center text-white mt-3"></p>
+    </div>
+  </div>
+
+  <script>
+  
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function openLightbox(src, caption){
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-img').alt = caption;
+      document.getElementById('lightbox-caption').textContent = caption;
+      lb.classList.remove('hidden');
+      lb.classList.add('flex');
+    }
+    function closeLightbox(){
+      const lb = document.getElementById('lightbox');
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+      document.getElementById('lightbox-img').src = '';
+    }
+
+    function handleForm(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+      alert('Gracias, ' + (data.nombre||'') + '! Tu mensaje ha sido registrado en este demo. Reemplaza handleForm para conectar un backend.');
+      form.reset();
+    }
+  </script>
+</body>
+</html>
+<a href="./Portafolio.html ">Texto del enlace</a>
